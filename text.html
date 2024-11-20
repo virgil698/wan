@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 通配符
+        *：通配符
+        （空格）：后代选择器
+        >：子代选择器
+        ~：兄弟选择器
+        +：兄弟选择器 -->
+    <!-- <style>
+        div{
+            margin: .3125rem;
+        }
+        .father{
+            border: .3125rem solid rgb(255, 103, 103);
+        }
+        .father > div{
+            border: .625rem solid rgb(120, 226, 255);
+        }
+    </style>
+    <div class="father">
+
+        <div>大儿子
+            <div>大孙子</div>
+        </div>
+
+        <div>二儿子
+            <div>二孙子
+                <div>曾孙子</div>
+            </div>
+        </div>
+
+        <div>三儿子
+            <span>大孙女</span>
+        </div>
+
+        <div>四儿子</div>
+    </div> -->
+
+    <!-- 伪类选择器 -->
+     <style>
+        /* 子代伪类 */
+        /* .zz > div:nth-of-type(2){
+            border: .125rem solid green;
+        } */
+        /* .zz > div:nth-of-type(2n){
+            border: .125rem solid green;
+        } */
+        /* .zz > div:nth-of-type(even){
+            border: .125rem solid green;
+        }
+        .zz > div:nth-of-type(2n+1){
+            border: .125rem solid rgb(255, 82, 82);
+        } */
+        /* .zz > div:nth-of-type(3n+1){
+            border: .125rem solid rgb(255, 82, 82);
+        } */
+
+        .c222{
+            border: .3125rem solid red;
+        }
+        .c222:hover{
+            background: red;
+            transition: all linear 2s;
+        }
+     </style>
+     <div class="zz">
+        <div>1</div>
+        <div class="c222">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+     </div>
+</body>
+</html>
